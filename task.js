@@ -6,7 +6,7 @@ function inputTextArea() {
 }
 
 function returnText() {
-    textByEditor.value = localStorage.text;
+    textByEditor.value = localStorage.getItem('text');
 }
 
 textByEditor.addEventListener('input', inputTextArea);
